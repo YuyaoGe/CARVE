@@ -1,0 +1,9 @@
+torch>=2.0
+torchvision
+transformers==4.50.0
+qwen-vl-utils
+accelerate
+pillow
+numpy
+scipy
+matplotlib
