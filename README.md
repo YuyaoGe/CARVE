@@ -1,3 +1,5 @@
+
+
 # [ECCV 2026] CARVE: Contrastive Attention Refinement for Visual Enhancement
 
 [![arXiv](https://img.shields.io/static/v1?label=arXiv&message=2509.06461&color=red&logo=arxiv)](https://arxiv.org/abs/2509.06461)
@@ -63,7 +65,7 @@ python main.py --model-id Qwen/Qwen2.5-VL-3B-Instruct --family qwen2_5 \
     --image /path/to/image.jpg --question "your question" \
     --version v4 --save-dir outputs
 ```
-`--version` selects the method variant (`v1`-`v4`). With `--save-dir`, the intermediates (`sum_att_map.png`, `mask_map.png`, `crop_masked_image.png`, `marked_original.png`) are written for inspection. Add `--plot` to also save `pipeline.png` (original | attention | mask | refined) and `layerwise.png` (per-layer contrastive attention).
+`--version` selects the method variant (`v1`-`v4`). With `--save-dir`, the intermediates (`sum_att_map.png`, `mask_map.png`, `masked_image.png`, `crop_masked_image.png`, `marked_original.png`) are written for inspection. Add `--plot` to also save `pipeline.png` (original | attention | mask | refined) and `layerwise.png` (per-layer contrastive attention).
 
 ### 3. Use as a library
 ```python
